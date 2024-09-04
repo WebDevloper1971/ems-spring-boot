@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xlmns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:xlmns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Page</title>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          list-style: none;
+        }
+
+        body {
+          height: 100svh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: monospace;
+          gap: 1rem;
+        }
+        h1 {
+          color: crimson;
+        }
+        a {
+          font-size: 1rem;
+          text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Status : 401</h1>
+<h1>Unauthorized Access</h1>
+
+<a th:href="@{'/'}" class="back">Go to home</a>
+</body>
+</html>
